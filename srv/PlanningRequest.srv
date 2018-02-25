@@ -1,0 +1,17 @@
+# Planning request
+
+# requested pose
+geometry_msgs/PoseStamped pose
+# manipulator ID (0=any, 1=left only, 2=right only)
+int8 id
+# motion duration
+float32 duration
+# starting pose (leave empty to plan from last/current pose)
+float32[] joint_angles
+---
+# result (true=success, false=fail)
+bool result
+# planned trajectory
+trajectory_msgs/JointTrajectory trajectory
+# final pose joint angles
+float32[] joint_angles

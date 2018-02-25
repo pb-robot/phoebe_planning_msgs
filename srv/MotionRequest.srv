@@ -1,0 +1,11 @@
+# Motion request
+
+# requested motion trajectory
+trajectory_msgs/JointTrajectory trajectory
+# translational error tolerance for the final pose
+float32 tolerance
+---
+# result (true=success, false=fail)
+bool result
+# final pose joint angles
+float32[] joint_angles

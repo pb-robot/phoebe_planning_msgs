@@ -1,0 +1,15 @@
+# Gripper motion request
+
+# requested angle (if distance == 0, then uses angle)
+float32 angle
+# distance between grippers (if 0 then uses angle)
+float32 distance
+# manipulator ID (1=left, 2=right)
+int8 id
+# motion duration
+float32 duration
+---
+# result (true=success, false=fail)
+bool result
+# joint angle after execution
+float32 joint_angle

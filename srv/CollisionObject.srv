@@ -1,0 +1,15 @@
+# Collision object adding service
+
+# object pose (center of object position + orientation)
+geometry_msgs/PoseStamped pose
+# object
+shape_msgs/SolidPrimitive shape
+# action (0=add, 1=modify, 2=delete)
+int8 action
+# id (if modifying or deleting)
+int8 id
+---
+# result (true=success, false=fail)
+bool result
+# object ID (used when modifying/deleting the object later)
+int8 id
